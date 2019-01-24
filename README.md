@@ -71,7 +71,7 @@ In particular, you should provide all details of the differences between the dep
 - Different configuration files?
 - Separate git branch?
 
-The site is available to view via [here](https://lowe54.github.io/milestone1_project/)
+The site is available to view via [here](https://lowe54.github.io/milestone2_project/)
 
 The following steps were made in order to deploy the project
 ###Github Deployment
