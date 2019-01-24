@@ -71,7 +71,27 @@ In particular, you should provide all details of the differences between the dep
 - Different configuration files?
 - Separate git branch?
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The site is available to view via [here](https://lowe54.github.io/milestone1_project/)
+
+The following steps were made in order to deploy the project
+###Github Deployment
+- In a terminal, the git repository was initiated via the `git init` command
+- The repository was linked to a .git file on github via
+    - `git remote add origin https://github.com/Lowe54/milestone2_project.git`
+    - `git push -u origin master`
+    
+- After each change, the following commands were used to push the changes to the git repository
+    - `git add *` - This adds all changed files to staging
+    - `git commit -m "MESSAGE HERE"` - Commits the work with a brief message as to what has changed
+    - `git push` - This pushes the work to the git repository, after entering your github username and password
+
+
+### Github Cloning
+- In order to clone the github repository, type the following command in a terminal
+    - `git clone https://github.com/Lowe54/milestone2_project`
+- If you wish to change the default directory to where the project is checked out to, use the following command 
+    - `git clone https://github.com/Lowe54/milestone2_project *FolderName*`
+
 
 
 ## Credits
