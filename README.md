@@ -35,11 +35,12 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [HTML5](https://www.w3.org/standards/webdesign/htmlcss)
     - **HTML5** is the basic building language of all websites, it allows for structure 
 - [CSS3](https://www.w3.org/standards/webdesign/htmlcss#whatcss)
-    - **CSS 3** is used to describe web pages, via color, font and other styling. In the project it is used for styling the elements on the page 
+    - **CSS 3** is used to describe web pages, via color, font and other styling. In the project it is used for styling the elements on the page.
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 - [Bootstrap v3.3](https://getbootstrap.com/docs/3.3/)
     - The project uses **Bootstrap** for the navbar functionality, along with making the images responsive and responsive visibility classes. In addtion it provides the 'grid' functionality for layout purposes.
+- [SASS])(http://sass-lang.com/) - **SASS** was used to add extra functionality to CSS, it allows for nested statements to be used, which in turn made the files easier to read.
 
 
 ## Testing
@@ -73,8 +74,8 @@ In particular, you should provide all details of the differences between the dep
 
 The site is available to view via [here](https://lowe54.github.io/milestone2_project/)
 
-The following steps were made in order to deploy the project
-###Github Deployment
+The following steps were made in order to deploy the project 
+### Github Deployment
 - In a terminal, the git repository was initiated via the `git init` command
 - The repository was linked to a .git file on github via
     - `git remote add origin https://github.com/Lowe54/milestone2_project.git`
@@ -92,7 +93,13 @@ The following steps were made in order to deploy the project
 - If you wish to change the default directory to where the project is checked out to, use the following command 
     - `git clone https://github.com/Lowe54/milestone2_project *FolderName*`
 
+### Style Changing
 
+The styles of this site are in SASS (.scss) format, in order to change the styles you will need to enter the following command into a terminal.
+
+If you get an `command not recognised` error, please follow the steps [here](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass)
+
+`sass --watch assets-src/scss/:assets/css`
 
 ## Credits
 
