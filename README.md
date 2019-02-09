@@ -106,6 +106,8 @@ If you get an `command not recognised` error, please follow the steps [here](htt
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
+- The color scheme was aquired from 'bootswatch', which is a free color scheme repository for bootstrap [Color theme 'Minty'](https://bootswatch.com/minty/)
+
 ### Media
 - The photos used in this site were obtained from ...
 

@@ -1,2 +1,42 @@
 // Main.scss
+// Include needed grid mixins
+@import "bootstrap/functions";
+@import "bootstrap/variables_minty";
+@import "bootstrap/variables";
 
+
+@import "bootstrap/mixins/breakpoints";
+@import "bootstrap/mixins/grid-framework";
+@import "bootstrap/mixins/grid";
+
+@import "bootstrap/grid";
+@import "bootstrap/utilities/display";
+@import "bootstrap/utilities/flex";
+// @import "bootstrap/bootstrap-grid.scss";
+
+// MAIN SECTIONS
+body, main{
+    @include make-col(12);
+    display:flex !important;
+        @include media-breakpoint-down(sm){
+        // Override default layout display
+        display:block !important;
+        }
+}
+
+#content{
+    background-color: $orange;
+    @include make-col(9);
+    @include media-breakpoint-down(sm){
+        @include make-col(12);
+        display:block
+    }
+}
+#sidebar{
+    background-color: $secondary;
+    @include make-col(3);
+    @include media-breakpoint-down(sm) { 
+        @include make-col(12);
+        display:block;
+     }
+}
