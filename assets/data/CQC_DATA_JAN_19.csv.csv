@@ -1,0 +1,999 @@
+ServiceTypes,LocalAuthority,Region
+Nursing homes,East Sussex,South East
+Community services - Nursing,Trafford,North West
+Residential homes,Lewisham,London
+Residential homes,Devon,South West
+Nursing homes,County Durham,North East
+Homecare agencies,West Sussex,South East
+Homecare agencies,Blackpool,North West
+Clinic,Kent,South East
+Clinic,Cambridgeshire,East
+Clinic,Leeds,Yorkshire & Humberside
+Clinic,Liverpool,North West
+Clinic,Westminster,London
+Dentist,Buckinghamshire,South East
+Clinic,Camden,London
+Clinic,Hammersmith and Fulham,London
+Dentist,Buckinghamshire,South East
+Clinic,Manchester,North West
+Clinic,Northamptonshire,East Midlands
+Clinic,Norfolk,East
+Clinic,Nottingham,East Midlands
+Clinic,Sheffield,Yorkshire & Humberside
+Dentist,Greenwich,London
+Residential homes,East Sussex,South East
+Homecare agencies,South Gloucestershire,South West
+Homecare agencies,Barking and Dagenham,London
+Dentist,Sheffield,Yorkshire & Humberside
+Clinic,Norfolk,East
+Homecare agencies,Barnsley,Yorkshire & Humberside
+Dentist,Birmingham,West Midlands
+Community services - Nursing,Somerset,South West
+Doctors/GPs,"Kingston upon Hull, City of",Yorkshire & Humberside
+Nursing homes,Birmingham,West Midlands
+Nursing homes,Lancashire,North West
+Supported living,Surrey,South East
+Doctors/GPs,"Bristol, City of",South West
+Doctors/GPs,Derbyshire,East Midlands
+Education disability services,Doncaster,Yorkshire & Humberside
+Education disability services,Doncaster,Yorkshire & Humberside
+Dentist,Southampton,South East
+Diagnosis/screening,"Bristol, City of",South West
+Homecare agencies,Suffolk,East
+Dentist,Windsor and Maidenhead,South East
+Nursing homes,Nottinghamshire,East Midlands
+Residential homes,Kingston upon Thames,London
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Residential homes,Norfolk,East
+Dentist,Redbridge,London
+Homecare agencies,Coventry,West Midlands
+Homecare agencies,Harrow,London
+Homecare agencies,Hertfordshire,East
+Homecare agencies,Birmingham,West Midlands
+Residential homes,Essex,East
+Homecare agencies,Coventry,West Midlands
+Dentist,Surrey,South East
+Residential homes,Southampton,South East
+Doctors/GPs,West Sussex,South East
+Residential homes,Greenwich,London
+Dentist,Surrey,South East
+Dentist,Brent,London
+Dentist,"Herefordshire, County of",West Midlands
+Supported housing,Cambridgeshire,East
+Dentist,Kent,South East
+Supported housing,Cambridgeshire,East
+Homecare agencies,Cambridgeshire,East
+Homecare agencies,Nottinghamshire,East Midlands
+Dentist,Surrey,South East
+Dentist,Wokingham,South East
+Doctors/GPs,Westminster,London
+Dentist,Ealing,London
+Homecare agencies,Bradford,Yorkshire & Humberside
+Dentist,West Sussex,South East
+Dentist,Kent,South East
+Homecare agencies,Solihull,West Midlands
+Homecare agencies,Doncaster,Yorkshire & Humberside
+Homecare agencies,Sutton,London
+Shared lives,Wakefield,Yorkshire & Humberside
+Dentist,Derbyshire,East Midlands
+Doctors/GPs,Calderdale,Yorkshire & Humberside
+Doctors/GPs,Calderdale,Yorkshire & Humberside
+Homecare agencies,Essex,East
+Homecare agencies,Sefton,North West
+Clinic,Sutton,London
+Homecare agencies,"Bristol, City of",South West
+Homecare agencies,Hertfordshire,East
+Homecare agencies,Tameside,North West
+Doctors/GPs,Southampton,South East
+Doctors/GPs,Wakefield,Yorkshire & Humberside
+Dentist,Worcestershire,West Midlands
+Residential homes,Gloucestershire,South West
+Homecare agencies,North Lincolnshire,Yorkshire & Humberside
+Doctors/GPs,Newham,London
+Clinic,Leicester,East Midlands
+Dentist,Medway,South East
+Ambulances,Enfield,London
+Residential homes,Dudley,West Midlands
+Nursing homes,Wiltshire,South West
+Supported housing,Cheshire East,North West
+Supported housing,Cheshire East,North West
+Supported housing,Cheshire East,North West
+Supported housing,Cheshire East,North West
+Nursing homes,Warwickshire,West Midlands
+Dentist,Oxfordshire,South East
+Residential homes,Devon,South West
+Homecare agencies,Nottinghamshire,East Midlands
+Nursing homes,Warwickshire,West Midlands
+Clinic,Walsall,West Midlands
+Clinic,Birmingham,West Midlands
+Doctors/GPs,Oxfordshire,South East
+Supported living,Gloucestershire,South West
+Homecare agencies,Gloucestershire,South West
+Dentist,Gloucestershire,South West
+Nursing homes,Poole,South West
+Homecare agencies,Buckinghamshire,South East
+Residential homes,Leicestershire,East Midlands
+Nursing homes,Lincolnshire,East Midlands
+Mobile doctors,Westminster,London
+Dentist,"Bristol, City of",South West
+Homecare agencies,Essex,East
+Homecare agencies,Hillingdon,London
+Residential homes,"Kingston upon Hull, City of",Yorkshire & Humberside
+Nursing homes,Sefton,North West
+Dentist,Enfield,London
+Residential homes,Lincolnshire,East Midlands
+Homecare agencies,North Yorkshire,Yorkshire & Humberside
+Homecare agencies,Redcar and Cleveland,North East
+Nursing homes,Kirklees,Yorkshire & Humberside
+Ambulances,Peterborough,East
+Homecare agencies,Hertfordshire,East
+Dentist,North Yorkshire,Yorkshire & Humberside
+Dentist,Salford,North West
+Doctors/GPs,Nottingham,East Midlands
+Homecare agencies,Derbyshire,East Midlands
+Dentist,"Bristol, City of",South West
+Supported living,Gateshead,North East
+Dentist,Merton,London
+Community services - Healthcare,Medway,South East
+Residential homes,Darlington,North East
+Dentist,Wirral,North West
+Nursing homes,"Herefordshire, County of",West Midlands
+Homecare agencies,Calderdale,Yorkshire & Humberside
+Homecare agencies,Bradford,Yorkshire & Humberside
+Dentist,Wirral,North West
+Homecare agencies,Cambridgeshire,East
+Residential homes,Devon,South West
+Residential homes,Nottingham,East Midlands
+Supported living,Bromley,London
+Homecare agencies,South Gloucestershire,South West
+Doctors/GPs,North Somerset,South West
+Residential homes,Brent,London
+Dentist,Cornwall,South West
+Dentist,Torbay,South West
+Dentist,Haringey,London
+Dentist,Barnet,London
+Rehabilitation (illness/injury),Sandwell,West Midlands
+Residential homes,Ealing,London
+Dentist,West Sussex,South East
+Dentist,Richmond upon Thames,London
+Residential homes,Nottinghamshire,East Midlands
+Dentist,Wigan,North West
+Doctors/GPs,Wokingham,South East
+Homecare agencies,Islington,London
+Homecare agencies,Dorset,South West
+Residential homes,Blackpool,North West
+Dentist,Birmingham,West Midlands
+Homecare agencies,Norfolk,East
+Nursing homes,Norfolk,East
+Nursing homes,Norfolk,East
+Nursing homes,Norfolk,East
+Homecare agencies,Norfolk,East
+Homecare agencies,Norfolk,East
+Homecare agencies,Norfolk,East
+Homecare agencies,Norfolk,East
+Residential homes,Norfolk,East
+Homecare agencies,Stockton-on-Tees,North East
+Residential homes,Kent,South East
+Residential homes,Surrey,South East
+Nursing homes,Hounslow,London
+Residential homes,Brighton and Hove,South East
+Homecare agencies,Kent,South East
+Residential homes,Lincolnshire,East Midlands
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Nursing homes,Oxfordshire,South East
+Homecare agencies,Stoke-on-Trent,West Midlands
+Nursing homes,Stoke-on-Trent,West Midlands
+Supported housing,Portsmouth,South East
+Supported housing,Portsmouth,South East
+Nursing homes,Redcar and Cleveland,North East
+Residential homes,Northamptonshire,East Midlands
+Residential homes,Croydon,London
+Residential homes,Surrey,South East
+Nursing homes,Bromley,London
+Residential homes,Hampshire,South East
+Community services - Healthcare,Dorset,South West
+Nursing homes,Sutton,London
+Dentist,Surrey,South East
+Dentist,Kent,South East
+Residential homes,Surrey,South East
+Nursing homes,Lincolnshire,East Midlands
+Residential homes,East Sussex,South East
+Residential homes,Kent,South East
+Residential homes,West Sussex,South East
+Residential homes,West Sussex,South East
+Residential homes,Surrey,South East
+Homecare agencies,Bracknell Forest,South East
+Residential homes,East Sussex,South East
+Dentist,County Durham,North East
+Nursing homes,Lincolnshire,East Midlands
+Dentist,Lincolnshire,East Midlands
+Community services - Healthcare,Westminster,London
+Residential homes,Harrow,London
+Residential homes,Northumberland,North East
+Community services - Healthcare,Camden,London
+Doctors/GPs,Halton,North West
+Nursing homes,Norfolk,East
+Homecare agencies,Kent,South East
+Residential homes,East Sussex,South East
+Residential homes,Hampshire,South East
+Clinic,Barnet,London
+Dentist,Tower Hamlets,London
+Residential homes,Calderdale,Yorkshire & Humberside
+Residential homes,Barnet,London
+Homecare agencies,Birmingham,West Midlands
+Homecare agencies,Sandwell,West Midlands
+Homecare agencies,Staffordshire,West Midlands
+Homecare agencies,Redbridge,London
+Residential homes,Lancashire,North West
+Nursing homes,Northamptonshire,East Midlands
+Nursing homes,Greenwich,London
+Residential homes,Kent,South East
+Residential homes,Northamptonshire,East Midlands
+Residential homes,Cornwall,South West
+Nursing homes,Surrey,South East
+Nursing homes,West Sussex,South East
+Residential homes,East Sussex,South East
+Rehabilitation (substance abuse),Wokingham,South East
+Nursing homes,Camden,London
+Nursing homes,Waltham Forest,London
+Nursing homes,Surrey,South East
+Residential homes,County Durham,North East
+Clinic,Waltham Forest,London
+Clinic,Norfolk,East
+Homecare agencies,Barnet,London
+Dentist,Croydon,London
+Dentist,Hertfordshire,East
+Dentist,Central Bedfordshire,East
+Residential homes,Bournemouth,South West
+Residential homes,Swindon,South West
+Rehabilitation (substance abuse),Tower Hamlets,London
+Doctors/GPs,City of London,London
+Doctors/GPs,Kensington and Chelsea,London
+Residential homes,Isle of Wight,South East
+Doctors/GPs,Kensington and Chelsea,London
+Dentist,Gloucestershire,South West
+Residential homes,Hillingdon,London
+Residential homes,Brent,London
+Mobile doctors,Westminster,London
+Homecare agencies,Norfolk,East
+Nursing homes,County Durham,North East
+Residential homes,Hampshire,South East
+Nursing homes,County Durham,North East
+Residential homes,Croydon,London
+Nursing homes,Bradford,Yorkshire & Humberside
+Nursing homes,Suffolk,East
+Nursing homes,Norfolk,East
+Residential homes,Sutton,London
+Hospice,South Tyneside,North East
+Residential homes,Suffolk,East
+Residential homes,Cornwall,South West
+Residential homes,Leicestershire,East Midlands
+Nursing homes,Wandsworth,London
+Doctors/GPs,Westminster,London
+Residential homes,South Tyneside,North East
+Hospice,Newcastle upon Tyne,North East
+Hospice,Barnsley,Yorkshire & Humberside
+Residential homes,Ealing,London
+Hospice,Torbay,South West
+Residential homes,Devon,South West
+Residential homes,Cornwall,South West
+Residential homes,Somerset,South West
+Community services - Healthcare,Blackburn with Darwen,North West
+Community services - Healthcare,"Bristol, City of",South West
+Community services - Healthcare,Lambeth,London
+Community services - Healthcare,Lancashire,North West
+Community services - Healthcare,Cornwall,South West
+Community services - Healthcare,Camden,London
+Community services - Healthcare,Liverpool,North West
+Community services - Healthcare,Manchester,North West
+Community services - Healthcare,Milton Keynes,South East
+Hospice,County Durham,North East
+Nursing homes,Bromley,London
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Residential homes,Suffolk,East
+Nursing homes,Suffolk,East
+Dentist,Kent,South East
+Clinic,Surrey,South East
+Clinic,Surrey,South East
+Nursing homes,Oxfordshire,South East
+Residential homes,Hartlepool,North East
+Residential homes,Torbay,South West
+Doctors/GPs,Newcastle upon Tyne,North East
+Residential homes,Kent,South East
+Dentist,Hertfordshire,East
+Dentist,Cheshire East,North West
+Dentist,Cornwall,South West
+Residential homes,Hertfordshire,East
+Homecare agencies,Torbay,South West
+Homecare agencies,Cheshire East,North West
+Hospice,Devon,South West
+Residential homes,West Sussex,South East
+Homecare agencies,West Sussex,South East
+Residential homes,Cambridgeshire,East
+Nursing homes,Hertfordshire,East
+Residential homes,Gloucestershire,South West
+Residential homes,Sandwell,West Midlands
+Homecare agencies,Sheffield,Yorkshire & Humberside
+Residential homes,Warwickshire,West Midlands
+Residential homes,Warwickshire,West Midlands
+Residential homes,Warwickshire,West Midlands
+Residential homes,Warwickshire,West Midlands
+Residential homes,Warwickshire,West Midlands
+Residential homes,Warwickshire,West Midlands
+Residential homes,Warwickshire,West Midlands
+Residential homes,Somerset,South West
+Residential homes,Merton,London
+Doctors/GPs,Westminster,London
+Hospice,North Lincolnshire,Yorkshire & Humberside
+Residential homes,South Gloucestershire,South West
+Homecare agencies,Northumberland,North East
+Clinic,Hackney,London
+Residential homes,Lancashire,North West
+Dentist,Worcestershire,West Midlands
+Nursing homes,County Durham,North East
+Residential homes,Cambridgeshire,East
+Homecare agencies,Merton,London
+Residential homes,Devon,South West
+Residential homes,Sheffield,Yorkshire & Humberside
+Nursing homes,Oxfordshire,South East
+Nursing homes,West Sussex,South East
+Residential homes,Wirral,North West
+Residential homes,Cumbria,North West
+Residential homes,Brent,London
+Residential homes,County Durham,North East
+Residential homes,Brent,London
+Nursing homes,Buckinghamshire,South East
+Nursing homes,West Sussex,South East
+Residential homes,Oxfordshire,South East
+Nursing homes,Waltham Forest,London
+Residential homes,Croydon,London
+Nursing homes,Surrey,South East
+Residential homes,County Durham,North East
+Residential homes,Devon,South West
+Nursing homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Redcar and Cleveland,North East
+Residential homes,Torbay,South West
+Hospice,Bolton,North West
+Rehabilitation (substance abuse),Wandsworth,London
+Residential homes,Peterborough,East
+Doctors/GPs,Westminster,London
+Dentist,Cheshire East,North West
+Residential homes,Nottinghamshire,East Midlands
+Residential homes,Wiltshire,South West
+Doctors/GPs,Newcastle upon Tyne,North East
+Nursing homes,Sutton,London
+Clinic,North Yorkshire,Yorkshire & Humberside
+Residential homes,Newcastle upon Tyne,North East
+Residential homes,Newcastle upon Tyne,North East
+Residential homes,Kingston upon Thames,London
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Homecare agencies,Solihull,West Midlands
+Residential homes,Wakefield,Yorkshire & Humberside
+Residential homes,Stockton-on-Tees,North East
+Residential homes,Devon,South West
+Community services - Healthcare,Leeds,Yorkshire & Humberside
+Residential homes,Croydon,London
+Residential homes,Buckinghamshire,South East
+Residential homes,Kent,South East
+Residential homes,Harrow,London
+Doctors/GPs,Brighton and Hove,South East
+Residential homes,Kent,South East
+Diagnosis/screening,Sheffield,Yorkshire & Humberside
+Nursing homes,Oxfordshire,South East
+Residential homes,North Tyneside,North East
+Residential homes,West Sussex,South East
+Residential homes,Cumbria,North West
+Nursing homes,Surrey,South East
+Homecare agencies,Wirral,North West
+Residential homes,Sutton,London
+Residential homes,North Somerset,South West
+Residential homes,Poole,South West
+Residential homes,Hampshire,South East
+Residential homes,Hampshire,South East
+Residential homes,Croydon,London
+Dentist,Wiltshire,South West
+Homecare agencies,Norfolk,East
+Nursing homes,Doncaster,Yorkshire & Humberside
+Nursing homes,Lancashire,North West
+Residential homes,Redcar and Cleveland,North East
+Residential homes,Somerset,South West
+Residential homes,Buckinghamshire,South East
+Nursing homes,Buckinghamshire,South East
+Residential homes,Kent,South East
+Residential homes,Newham,London
+Nursing homes,Birmingham,West Midlands
+Residential homes,Worcestershire,West Midlands
+Residential homes,Torbay,South West
+Residential homes,Suffolk,East
+Nursing homes,Hackney,London
+Residential homes,Surrey,South East
+Residential homes,Northumberland,North East
+Nursing homes,Ealing,London
+Nursing homes,North Yorkshire,Yorkshire & Humberside
+Nursing homes,Somerset,South West
+Residential homes,West Sussex,South East
+Hyperbaric chamber services,Poole,South West
+Residential homes,Kent,South East
+Residential homes,Kingston upon Thames,London
+Nursing homes,Buckinghamshire,South East
+Residential homes,Surrey,South East
+Residential homes,Kent,South East
+Homecare agencies,Leeds,Yorkshire & Humberside
+Residential homes,Kent,South East
+Hospice,Havering,London
+Hospice,Central Bedfordshire,East
+Homecare agencies,Kent,South East
+Residential homes,Suffolk,East
+Doctors/GPs,Newcastle upon Tyne,North East
+Residential homes,Hampshire,South East
+Residential homes,Kent,South East
+Residential homes,Kent,South East
+Doctors/GPs,Harrow,London
+Residential homes,Kent,South East
+Residential homes,Suffolk,East
+Nursing homes,North Somerset,South West
+Residential homes,Cornwall,South West
+Homecare agencies,Oxfordshire,South East
+Residential homes,Buckinghamshire,South East
+Homecare agencies,Reading,South East
+Community services - Nursing,Richmond upon Thames,London
+Dentist,Rotherham,Yorkshire & Humberside
+Nursing homes,Liverpool,North West
+Community services - Nursing,Lancashire,North West
+Homecare agencies,Wakefield,Yorkshire & Humberside
+Residential homes,Kent,South East
+Nursing homes,Warwickshire,West Midlands
+Dentist,Derby,East Midlands
+Homecare agencies,Sandwell,West Midlands
+Residential homes,Hertfordshire,East
+Residential homes,Hounslow,London
+Community services - Nursing,"Bristol, City of",South West
+Nursing homes,East Sussex,South East
+Hospice,Hampshire,South East
+Hospitals - Mental health/capacity,Doncaster,Yorkshire & Humberside
+Residential homes,Essex,East
+Residential homes,East Riding of Yorkshire,Yorkshire & Humberside
+Residential homes,West Sussex,South East
+Residential homes,Sunderland,North East
+Nursing homes,Sutton,London
+Residential homes,Havering,London
+Residential homes,Bracknell Forest,South East
+Residential homes,Southend-on-Sea,East
+Residential homes,Buckinghamshire,South East
+Nursing homes,Lancashire,North West
+Residential homes,Brighton and Hove,South East
+Homecare agencies,Bedford,East
+Homecare agencies,Bradford,Yorkshire & Humberside
+Nursing homes,Central Bedfordshire,East
+Residential homes,Bromley,London
+Homecare agencies,County Durham,North East
+Nursing homes,Northumberland,North East
+Dentist,Thurrock,East
+Residential homes,Rochdale,North West
+Homecare agencies,Ealing,London
+Dentist,Knowsley,North West
+Residential homes,Hertfordshire,East
+Dentist,Hertfordshire,East
+Homecare agencies,Wokingham,South East
+Residential homes,Staffordshire,West Midlands
+Dentist,Camden,London
+Community services - Nursing,Devon,South West
+Residential homes,Havering,London
+Dentist,Birmingham,West Midlands
+Dentist,Surrey,South East
+Residential homes,Bradford,Yorkshire & Humberside
+Residential homes,York,Yorkshire & Humberside
+Nursing homes,Surrey,South East
+Residential homes,Bradford,Yorkshire & Humberside
+Nursing homes,Surrey,South East
+Residential homes,Merton,London
+Nursing homes,West Sussex,South East
+Doctors/GPs,Westminster,London
+Residential homes,Hillingdon,London
+Residential homes,York,Yorkshire & Humberside
+Residential homes,Ealing,London
+Residential homes,County Durham,North East
+Residential homes,Staffordshire,West Midlands
+Residential homes,Surrey,South East
+Residential homes,Northumberland,North East
+Dentist,Buckinghamshire,South East
+Residential homes,"Kingston upon Hull, City of",Yorkshire & Humberside
+Residential homes,Havering,London
+Hospital,Kingston upon Thames,London
+Residential homes,West Sussex,South East
+Nursing homes,Hertfordshire,East
+Residential homes,Dudley,West Midlands
+Hospice,Milton Keynes,South East
+Residential homes,Sutton,London
+Hospital,Lancashire,North West
+Doctors/GPs,East Riding of Yorkshire,Yorkshire & Humberside
+Hospice,Sheffield,Yorkshire & Humberside
+Rehabilitation (substance abuse),North Somerset,South West
+Residential homes,Hertfordshire,East
+Residential homes,Hertfordshire,East
+Residential homes,Central Bedfordshire,East
+Community services - Healthcare,Essex,East
+Dentist,St. Helens,North West
+Homecare agencies,Northamptonshire,East Midlands
+Clinic,Milton Keynes,South East
+Homecare agencies,Essex,East
+Nursing homes,Brighton and Hove,South East
+Residential homes,Milton Keynes,South East
+Residential homes,Havering,London
+Residential homes,Havering,London
+Residential homes,Reading,South East
+Residential homes,Hampshire,South East
+Residential homes,Essex,East
+Residential homes,Reading,South East
+Hospice,Cheshire West and Chester,North West
+Nursing homes,Kent,South East
+Residential homes,Devon,South West
+Doctors/GPs,Nottingham,East Midlands
+Residential homes,Wakefield,Yorkshire & Humberside
+Dentist,Sheffield,Yorkshire & Humberside
+Residential homes,Bournemouth,South West
+Residential homes,Bournemouth,South West
+Residential homes,Surrey,South East
+Homecare agencies,Sheffield,Yorkshire & Humberside
+Residential homes,West Berkshire,South East
+Nursing homes,West Sussex,South East
+Nursing homes,Wokingham,South East
+Nursing homes,Kent,South East
+Hospice,Hertfordshire,East
+Homecare agencies,Reading,South East
+Nursing homes,Oxfordshire,South East
+Residential homes,Wokingham,South East
+Residential homes,Essex,East
+Hospitals - Mental health/capacity,Essex,East
+Homecare agencies,Northamptonshire,East Midlands
+Dentist,Lambeth,London
+Residential homes,Bedford,East
+Doctors/GPs,Redbridge,London
+Homecare agencies,Stockport,North West
+Residential homes,East Riding of Yorkshire,Yorkshire & Humberside
+Hospice,Essex,East
+Homecare agencies,Norfolk,East
+Residential homes,West Sussex,South East
+Nursing homes,Oxfordshire,South East
+Residential homes,Middlesbrough,North East
+Residential homes,Gloucestershire,South West
+Residential homes,"Herefordshire, County of",West Midlands
+Homecare agencies,County Durham,North East
+Residential homes,Suffolk,East
+Residential homes,Norfolk,East
+Nursing homes,Ealing,London
+Residential homes,Kent,South East
+Homecare agencies,Peterborough,East
+Residential homes,Surrey,South East
+Residential homes,Southend-on-Sea,East
+Homecare agencies,Sunderland,North East
+Homecare agencies,Darlington,North East
+Residential homes,Bracknell Forest,South East
+Hospice,Suffolk,East
+Residential homes,Hertfordshire,East
+Residential homes,Sefton,North West
+Residential homes,Surrey,South East
+Doctors/GPs,Haringey,London
+Nursing homes,Cumbria,North West
+Nursing homes,Croydon,London
+Residential homes,Gloucestershire,South West
+Doctors/GPs,Bedford,East
+Residential homes,Bedford,East
+Homecare agencies,Bedford,East
+Nursing homes,Windsor and Maidenhead,South East
+Residential homes,Cambridgeshire,East
+Nursing homes,Bath and North East Somerset,South West
+Homecare agencies,Bradford,Yorkshire & Humberside
+Residential homes,Luton,East
+Residential homes,Luton,East
+Residential homes,Surrey,South East
+Residential homes,Hertfordshire,East
+Residential homes,Hertfordshire,East
+Residential homes,Hertfordshire,East
+Homecare agencies,Hertfordshire,East
+Residential homes,Buckinghamshire,South East
+Dentist,Walsall,West Midlands
+Nursing homes,Derby,East Midlands
+Clinic,Barnsley,Yorkshire & Humberside
+Doctors/GPs,Westminster,London
+Residential homes,Wokingham,South East
+Residential homes,Northumberland,North East
+Nursing homes,Hertfordshire,East
+Residential homes,Southend-on-Sea,East
+Residential homes,Hartlepool,North East
+Nursing homes,Telford and Wrekin,West Midlands
+Nursing homes,Surrey,South East
+Residential homes,Redcar and Cleveland,North East
+Supported living,Croydon,London
+Residential homes,Brighton and Hove,South East
+Residential homes,Lancashire,North West
+Nursing homes,Shropshire,West Midlands
+Residential homes,Sunderland,North East
+Residential homes,Buckinghamshire,South East
+Residential homes,Leeds,Yorkshire & Humberside
+Nursing homes,Suffolk,East
+Rehabilitation (substance abuse),Oxfordshire,South East
+Residential homes,Peterborough,East
+Residential homes,Devon,South West
+Residential homes,Surrey,South East
+Doctors/GPs,Hertfordshire,East
+Residential homes,Norfolk,East
+Hospice,Derbyshire,East Midlands
+Residential homes,Wandsworth,London
+Homecare agencies,Barnet,London
+Residential homes,Bromley,London
+Residential homes,Richmond upon Thames,London
+Residential homes,South Gloucestershire,South West
+Residential homes,South Gloucestershire,South West
+Nursing homes,Somerset,South West
+Residential homes,Suffolk,East
+Nursing homes,Cornwall,South West
+Residential homes,West Sussex,South East
+Residential homes,East Sussex,South East
+Residential homes,West Sussex,South East
+Hospice,Wakefield,Yorkshire & Humberside
+Nursing homes,West Sussex,South East
+Residential homes,County Durham,North East
+Residential homes,Nottinghamshire,East Midlands
+Residential homes,Kent,South East
+Residential homes,Harrow,London
+Residential homes,Plymouth,South West
+Residential homes,Hampshire,South East
+Nursing homes,Cambridgeshire,East
+Residential homes,Harrow,London
+Residential homes,Kingston upon Thames,London
+Homecare agencies,Lambeth,London
+Nursing homes,East Sussex,South East
+Homecare agencies,Southampton,South East
+Residential homes,Barnsley,Yorkshire & Humberside
+Nursing homes,Birmingham,West Midlands
+Residential homes,"Herefordshire, County of",West Midlands
+Residential homes,"Herefordshire, County of",West Midlands
+Residential homes,Doncaster,Yorkshire & Humberside
+Residential homes,Newcastle upon Tyne,North East
+Residential homes,West Sussex,South East
+Residential homes,Norfolk,East
+Residential homes,Oxfordshire,South East
+Hospitals - Mental health/capacity,Norfolk,East
+Residential homes,Croydon,London
+Residential homes,Bedford,East
+Nursing homes,Newcastle upon Tyne,North East
+Nursing homes,Newcastle upon Tyne,North East
+Residential homes,Northumberland,North East
+Homecare agencies,Newcastle upon Tyne,North East
+Residential homes,Brighton and Hove,South East
+Residential homes,Staffordshire,West Midlands
+Nursing homes,Central Bedfordshire,East
+Residential homes,Wolverhampton,West Midlands
+Dentist,Bolton,North West
+Residential homes,County Durham,North East
+Homecare agencies,West Sussex,South East
+Residential homes,Bracknell Forest,South East
+Residential homes,"Herefordshire, County of",West Midlands
+Doctors/GPs,Isle of Wight,South East
+Homecare agencies,West Sussex,South East
+Residential homes,Kirklees,Yorkshire & Humberside
+Hospital,East Sussex,South East
+Residential homes,West Sussex,South East
+Residential homes,Devon,South West
+Dentist,Southampton,South East
+Dentist,Kent,South East
+Residential homes,Northumberland,North East
+Doctors/GPs,Kent,South East
+Doctors/GPs,Norfolk,East
+Dentist,Ealing,London
+Community services - Healthcare,Essex,East
+Homecare agencies,Cheshire East,North West
+Dentist,Southwark,London
+Nursing homes,North Yorkshire,Yorkshire & Humberside
+Residential homes,Hammersmith and Fulham,London
+Residential homes,East Sussex,South East
+Residential homes,Cornwall,South West
+Nursing homes,Surrey,South East
+Residential homes,Surrey,South East
+Homecare agencies,Enfield,London
+Nursing homes,East Sussex,South East
+Nursing homes,East Sussex,South East
+Nursing homes,Central Bedfordshire,East
+Residential homes,Croydon,London
+Residential homes,Barnet,London
+Residential homes,Devon,South West
+Residential homes,Devon,South West
+Nursing homes,East Sussex,South East
+Residential homes,Leicestershire,East Midlands
+Residential homes,North Yorkshire,Yorkshire & Humberside
+Ambulances,Cambridgeshire,East
+Residential homes,Lewisham,London
+Residential homes,Newcastle upon Tyne,North East
+Residential homes,Bournemouth,South West
+Residential homes,East Sussex,South East
+Residential homes,Suffolk,East
+Residential homes,Suffolk,East
+Nursing homes,Ealing,London
+Residential homes,Barnet,London
+Residential homes,Derby,East Midlands
+Residential homes,Wakefield,Yorkshire & Humberside
+Residential homes,Oldham,North West
+Residential homes,Leeds,Yorkshire & Humberside
+Doctors/GPs,Westminster,London
+Residential homes,Barnet,London
+Residential homes,Surrey,South East
+Nursing homes,East Sussex,South East
+Nursing homes,East Sussex,South East
+Doctors/GPs,Westminster,London
+Residential homes,Norfolk,East
+Residential homes,Portsmouth,South East
+Nursing homes,Surrey,South East
+Homecare agencies,Coventry,West Midlands
+Doctors/GPs,Kensington and Chelsea,London
+Residential homes,Dorset,South West
+Residential homes,Essex,East
+Residential homes,Brighton and Hove,South East
+Residential homes,Essex,East
+Residential homes,Southend-on-Sea,East
+Nursing homes,Barnet,London
+Residential homes,Essex,East
+Hospice,Leeds,Yorkshire & Humberside
+Residential homes,Northumberland,North East
+Residential homes,Walsall,West Midlands
+Hospice,Suffolk,East
+Residential homes,Kent,South East
+Residential homes,Norfolk,East
+Residential homes,Essex,East
+Nursing homes,Essex,East
+Residential homes,Kent,South East
+Residential homes,"Bristol, City of",South West
+Residential homes,North Yorkshire,Yorkshire & Humberside
+Residential homes,East Sussex,South East
+Supported living,Northamptonshire,East Midlands
+Residential homes,Devon,South West
+Residential homes,Devon,South West
+Residential homes,Wakefield,Yorkshire & Humberside
+Residential homes,Wakefield,Yorkshire & Humberside
+Residential homes,Kingston upon Thames,London
+Clinic,Solihull,West Midlands
+Residential homes,East Sussex,South East
+Residential homes,Bromley,London
+Residential homes,Lancashire,North West
+Nursing homes,Bradford,Yorkshire & Humberside
+Nursing homes,Bradford,Yorkshire & Humberside
+Nursing homes,Liverpool,North West
+Residential homes,Birmingham,West Midlands
+Residential homes,Gloucestershire,South West
+Residential homes,Newham,London
+Residential homes,Cumbria,North West
+Nursing homes,Croydon,London
+Nursing homes,Croydon,London
+Nursing homes,Staffordshire,West Midlands
+Residential homes,Plymouth,South West
+Nursing homes,Bradford,Yorkshire & Humberside
+Residential homes,Rochdale,North West
+Dentist,Portsmouth,South East
+Nursing homes,Isle of Wight,South East
+Residential homes,Isle of Wight,South East
+Residential homes,Isle of Wight,South East
+Residential homes,Isle of Wight,South East
+Residential homes,Hampshire,South East
+Homecare agencies,Portsmouth,South East
+Residential homes,Barnet,London
+Nursing homes,Oxfordshire,South East
+Residential homes,Solihull,West Midlands
+Residential homes,Derbyshire,East Midlands
+Homecare agencies,Lambeth,London
+Residential homes,Birmingham,West Midlands
+Nursing homes,Cambridgeshire,East
+Nursing homes,Cambridgeshire,East
+Nursing homes,West Sussex,South East
+Residential homes,East Riding of Yorkshire,Yorkshire & Humberside
+Nursing homes,Newham,London
+Nursing homes,Greenwich,London
+Hospice,Nottingham,East Midlands
+Residential homes,Northamptonshire,East Midlands
+Residential homes,Wiltshire,South West
+Residential homes,Wiltshire,South West
+Residential homes,Wiltshire,South West
+Clinic,Newcastle upon Tyne,North East
+Residential homes,Shropshire,West Midlands
+Residential homes,Worcestershire,West Midlands
+Residential homes,Sunderland,North East
+Nursing homes,Nottinghamshire,East Midlands
+Doctors/GPs,Havering,London
+Residential homes,Sandwell,West Midlands
+Residential homes,Suffolk,East
+Diagnosis/screening,Westminster,London
+Nursing homes,Dorset,South West
+Residential homes,Enfield,London
+Residential homes,West Sussex,South East
+Residential homes,Lincolnshire,East Midlands
+Hospice,Cornwall,South West
+Hospice,Cornwall,South West
+Residential homes,Slough,South East
+Residential homes,Havering,London
+Homecare agencies,Leicester,East Midlands
+Residential homes,Plymouth,South West
+Doctors/GPs,Hampshire,South East
+Dentist,Swindon,South West
+Residential homes,Enfield,London
+Dentist,Westminster,London
+Residential homes,Hampshire,South East
+Nursing homes,Hillingdon,London
+Clinic,Nottinghamshire,East Midlands
+Nursing homes,Cornwall,South West
+Residential homes,Somerset,South West
+Homecare agencies,Sunderland,North East
+Residential homes,Nottinghamshire,East Midlands
+Residential homes,Hertfordshire,East
+Nursing homes,Westminster,London
+Nursing homes,Slough,South East
+Residential homes,South Gloucestershire,South West
+Residential homes,"Bristol, City of",South West
+Residential homes,Newham,London
+Residential homes,Birmingham,West Midlands
+Residential homes,Derbyshire,East Midlands
+Residential homes,Lewisham,London
+Residential homes,Lewisham,London
+Residential homes,Dudley,West Midlands
+Clinic,"Bristol, City of",South West
+Residential homes,Haringey,London
+Doctors/GPs,Birmingham,West Midlands
+Homecare agencies,Hertfordshire,East
+Residential homes,Northamptonshire,East Midlands
+Residential homes,Suffolk,East
+Nursing homes,Rotherham,Yorkshire & Humberside
+Residential homes,Doncaster,Yorkshire & Humberside
+Nursing homes,Derby,East Midlands
+Residential homes,Devon,South West
+Residential homes,Rotherham,Yorkshire & Humberside
+Residential homes,Rotherham,Yorkshire & Humberside
+Residential homes,Rotherham,Yorkshire & Humberside
+Nursing homes,Lincolnshire,East Midlands
+Residential homes,Northamptonshire,East Midlands
+Residential homes,Surrey,South East
+Residential homes,Norfolk,East
+Residential homes,Suffolk,East
+Residential homes,Darlington,North East
+Nursing homes,Hertfordshire,East
+Homecare agencies,Cumbria,North West
+Nursing homes,Bromley,London
+Residential homes,East Riding of Yorkshire,Yorkshire & Humberside
+Residential homes,North Somerset,South West
+Nursing homes,Buckinghamshire,South East
+Residential homes,Kirklees,Yorkshire & Humberside
+Homecare agencies,Leeds,Yorkshire & Humberside
+Residential homes,Leeds,Yorkshire & Humberside
+Dentist,Leeds,Yorkshire & Humberside
+Nursing homes,Waltham Forest,London
+Residential homes,North Tyneside,North East
+Residential homes,Southend-on-Sea,East
+Residential homes,North Yorkshire,Yorkshire & Humberside
+Residential homes,North Yorkshire,Yorkshire & Humberside
+Residential homes,Cambridgeshire,East
+Residential homes,Kent,South East
+Residential homes,Bournemouth,South West
+Residential homes,Wiltshire,South West
+Hospice,Gloucestershire,South West
+Residential homes,Slough,South East
+Residential homes,Slough,South East
+Residential homes,Buckinghamshire,South East
+Residential homes,Buckinghamshire,South East
+Residential homes,Slough,South East
+Residential homes,Buckinghamshire,South East
+Residential homes,East Sussex,South East
+Dentist,West Sussex,South East
+Homecare agencies,Bradford,Yorkshire & Humberside
+Residential homes,Plymouth,South West
+Residential homes,Plymouth,South West
+Residential homes,Bradford,Yorkshire & Humberside
+Dentist,Manchester,North West
+Dentist,Stockport,North West
+Homecare agencies,Redbridge,London
+Residential homes,Leicestershire,East Midlands
+Residential homes,Nottinghamshire,East Midlands
+Residential homes,Sutton,London
+Clinic,Central Bedfordshire,East
+Doctors/GPs,Hackney,London
+Doctors/GPs,Leeds,Yorkshire & Humberside
+Homecare agencies,Devon,South West
+Nursing homes,Wirral,North West
+Residential homes,Lambeth,London
+Residential homes,Kent,South East
+Residential homes,Lewisham,London
+Residential homes,Kent,South East
+Residential homes,Dorset,South West
+Residential homes,Birmingham,West Midlands
+Residential homes,Hertfordshire,East
+Nursing homes,Cornwall,South West
+Residential homes,Enfield,London
+Nursing homes,East Sussex,South East
+Hospice,Rotherham,Yorkshire & Humberside
+Doctors/GPs,Wandsworth,London
+Residential homes,Liverpool,North West
+Residential homes,Blackburn with Darwen,North West
+Residential homes,Cumbria,North West
+Residential homes,Blackpool,North West
+Nursing homes,West Sussex,South East
+Residential homes,Wakefield,Yorkshire & Humberside
+Residential homes,North Yorkshire,Yorkshire & Humberside
+Residential homes,Surrey,South East
+Residential homes,North Yorkshire,Yorkshire & Humberside
+Residential homes,Solihull,West Midlands
+Residential homes,Wakefield,Yorkshire & Humberside
+Homecare agencies,Cambridgeshire,East
+Nursing homes,Hillingdon,London
+Nursing homes,Sheffield,Yorkshire & Humberside
+Residential homes,Wakefield,Yorkshire & Humberside
+Residential homes,Lincolnshire,East Midlands
+Residential homes,Enfield,London
+Residential homes,Windsor and Maidenhead,South East
+Residential homes,Cumbria,North West
+Residential homes,Gloucestershire,South West
+Residential homes,Cheshire West and Chester,North West
+Residential homes,Shropshire,West Midlands
+Residential homes,Blackpool,North West
+Hospice,"Kingston upon Hull, City of",Yorkshire & Humberside
+Homecare agencies,Plymouth,South West
+Residential homes,Norfolk,East
+Residential homes,Southend-on-Sea,East
+Rehabilitation (substance abuse),Portsmouth,South East
+Residential homes,Croydon,London
+Homecare agencies,Buckinghamshire,South East
+Hospice,Devon,South West
+Residential homes,Sheffield,Yorkshire & Humberside
+Residential homes,Leicestershire,East Midlands
+Residential homes,Lewisham,London
+Nursing homes,Derbyshire,East Midlands
+Clinic,Leeds,Yorkshire & Humberside
+Homecare agencies,West Sussex,South East
+Residential homes,Dorset,South West
+Residential homes,Redbridge,London
+Residential homes,Norfolk,East
+Residential homes,North Tyneside,North East
+Residential homes,Middlesbrough,North East
+Nursing homes,Hertfordshire,East
+Nursing homes,Brighton and Hove,South East
+Homecare agencies,Plymouth,South West
+Residential homes,Essex,East
+Residential homes,Brent,London
+Dentist,Birmingham,West Midlands
+Residential homes,Torbay,South West
+Residential homes,Buckinghamshire,South East
+Residential homes,Hertfordshire,East
+Residential homes,Redbridge,London
+Residential homes,Tower Hamlets,London
+Nursing homes,Stoke-on-Trent,West Midlands
+Homecare agencies,North Tyneside,North East
+Nursing homes,Worcestershire,West Midlands
+Residential homes,Wolverhampton,West Midlands
+Dentist,Leeds,Yorkshire & Humberside
+Clinic,Reading,South East
+Clinic,Newcastle upon Tyne,North East
+Residential homes,Sandwell,West Midlands
+Homecare agencies,Hampshire,South East
+Homecare agencies,North Yorkshire,Yorkshire & Humberside
+Dentist,Hampshire,South East
+Community services - Nursing,Harrow,London
+Homecare agencies,Solihull,West Midlands
+Residential homes,Hertfordshire,East
+Residential homes,Hertfordshire,East
+Nursing homes,Northamptonshire,East Midlands
+Nursing homes,Northamptonshire,East Midlands
+Homecare agencies,West Sussex,South East
+Homecare agencies,Enfield,London
+Residential homes,Telford and Wrekin,West Midlands
+Doctors/GPs,Northamptonshire,East Midlands
+Nursing homes,Portsmouth,South East
+Residential homes,Central Bedfordshire,East

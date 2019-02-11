@@ -1367,4 +1367,22 @@ body, main {
       max-width: 100%;
       display: block; } }
 
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0; }
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  /* aspect ratio */
+  vertical-align: top;
+  overflow: hidden; }
+
+#Selector select {
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+// The two classes below courtsey of https://stackoverflow.com/questions/9400615/whats-the-best-way-to-make-a-d3-js-visualisation-layout-responsive
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+// ----------------------------
+
+// The styling below rotated the bar chart 90 degrees on mobile, this was removed since it was easier to generate a rowchart that shows on mobile instead
+// svg{
+    
+//      @include media-breakpoint-down(sm){
+//          position: absolute;
+//         transform: rotate(90deg) translateX(400px) translateY(375px);
+        
+//         g.x{
+//             text{
+//                  color:white;
+//                  transform:rotate(270deg) translateX(55px);
+//                  &:last-of-type{
+//                      transform:rotate(270deg) translateX(65px);
+//              }
+//          }
+       
+
+
+//      }
+// }
+
+#Selector select{
+    width:100%;
+}
