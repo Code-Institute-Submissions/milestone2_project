@@ -14,7 +14,7 @@
    
         
     <!-- Third Party Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.4.6/crossfilter.js"></script>
 
@@ -53,7 +53,8 @@
         </header>
         <main>
             <div id="sidebar">
-                <div id="Selector"></div>
+              <p class="alert alert-info"><strong>Click on a button below to view detailed service breakdown for each region, click the reset button to reset to this chart</strong></p>
+                <div id="Selector" class="hidden"></div>
             </div>
             <div id="content">
                 <div id="regionCountBarChart" class="svg-container"></div>

@@ -1382,7 +1382,17 @@ body, main {
   vertical-align: top;
   overflow: hidden; }
 
-#Selector select {
-  width: 100%; }
+#button_container {
+  flex: 0 0 100%;
+  max-width: 100%; }
+  #button_container button {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    border-color: #FFF; }
+  @media (max-width: 767.98px) {
+    #button_container button {
+      flex: 0 0 50%;
+      max-width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

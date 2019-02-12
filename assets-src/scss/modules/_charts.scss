@@ -37,6 +37,17 @@
 //      }
 // }
 
-#Selector select{
-    width:100%;
+#button_container{
+    @include make-col(12);
+    button{
+        width:100%;
+        padding: 5px 0 5px 0;
+        border-radius:5px;
+        border-color:#FFF;
+    }
+    @include media-breakpoint-down(sm){
+        button{
+            @include make-col(6);
+        }
+    }
 }
