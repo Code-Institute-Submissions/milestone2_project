@@ -1,6 +1,6 @@
 // Graphs.js
 queue()
-.defer(d3.csv, "../assets/data/CQC_DATA_JAN_19.csv.csv")
+.defer(d3.csv, "assets/data/CQC_DATA_JAN_19.csv")
 .await(makeGraphs)
 
 function makeGraphs(error, data){
