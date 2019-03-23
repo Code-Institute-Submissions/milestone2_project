@@ -1345,7 +1345,8 @@ body, main {
   display: flex !important; }
   @media (max-width: 767.98px) {
     body, main {
-      display: block !important; } }
+      display: block !important;
+      height: 100%; } }
 
 #content {
   background-color: #fd7e14;
@@ -1369,18 +1370,17 @@ body, main {
 
 .svg-content-responsive {
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 0; }
 
 .svg-container {
   display: inline-block;
-  position: relative;
-  width: 100%;
+  position: fixed;
+  background-color: #fd7e14;
   padding-bottom: 100%;
   /* aspect ratio */
-  vertical-align: top;
-  overflow: hidden; }
+  vertical-align: top; }
 
 #button_container {
   flex: 0 0 100%;

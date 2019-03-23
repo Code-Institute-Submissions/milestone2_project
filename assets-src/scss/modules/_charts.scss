@@ -1,18 +1,18 @@
 // The two classes below courtsey of https://stackoverflow.com/questions/9400615/whats-the-best-way-to-make-a-d3-js-visualisation-layout-responsive
 .svg-content-responsive {
     display: inline-block;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 0;
 }
 .svg-container {
     display: inline-block;
-    position: relative;
-    width: 100%;
-    
+    position: fixed;
+    // width: 100%;
+    background-color: $orange;
     padding-bottom: 100%; /* aspect ratio */
     vertical-align: top;
-    overflow: hidden;
+    // overflow: hidden;
 }
 // ----------------------------
 

@@ -36,14 +36,17 @@ function makeGraphs(error, data){
     }
 
     dc.renderAll();
-    $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
+    $('#regionCountBarChart g.x text').each(function(e){
+        $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
+    })
     $('.dc-select-option').each(function(e){
-        $('#Selector').after("<button class=\"regSelect btn btn-primary\" value=\""+$(this).val()+"\" onClick=\"filterRowChart('"+$(this).val()+"')\">"+$(this).val().toUpperCase()+"</button>");
+        $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\"Region\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
     });
+    $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
     $('button.regSelect').wrapAll('<div id="button_container"/>');
     $('#Selector').hide();
  }
-
+//end make graphs
 //Select Dropdown
 function createDropdown(ndx){
     var dim = ndx.dimension(dc.pluck('Region'));
@@ -51,10 +54,8 @@ function createDropdown(ndx){
 
     dc.selectMenu('#Selector')
         .dimension(dim)
-        .group(group)
-        
-    
-}
+        .group(group);
+ }
 //Charts
  function chart_Regions(ndx){
     var dim = ndx.dimension(dc.pluck('Region'));
@@ -111,72 +112,139 @@ dc.rowChart('#regionCountRowChart')
         dc.renderAll();
     }
 
-    filterRowChart = function (value) {
-        console.log(value);
-        var dim = ndx.dimension(dc.pluck('ServiceTypes'))
-        group = reduceByRegion(dim,value);
-        STBar = dc.barChart('#regionCountBarChart')
-        .width(1400)
-        .height(500)
-        .margins({top:10, right:50, bottom:30, left:50})
+   setView =  function (type){
+    var dim = ndx.dimension(dc.pluck(type));
+    var group = dim.group();
+    $('#Selector').html("");
+    dc.selectMenu('#Selector')
         .dimension(dim)
         .group(group)
-        .valueAccessor(function(d){
-            if(d.value.match > 0 ){
-                return d.value.match;
-            } else{
-                return 0;
-            }
-        })
-        .transitionDuration(500)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .elasticY(true)
-        .xAxisLabel("Service Type")
-        .yAxis().ticks(20);
-
-       
-        dc.rowChart('#regionCountRowChart')
-        .width(500)
-        .height(500)
-        .dimension(dim)
-        .group(group)
-        .valueAccessor(function(d){
-            if(d.value.match > 0 ){
-                return d.value.match;
-            } else{
-                return 0;
-            }
-        })
-        .elasticX(true);
-       
-        $('#regionCountRowChart').html("");
+        .numberVisible(10);
+        
         dc.renderAll();
-        $('#regionCountBarChart g.x text').each(function(e){
-            $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
-        })
+        $('#button_container').remove();
+        $('.dc-select-option').each(function(e){
+            $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\""+type+"\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
+        });
+        $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
+        $('button.regSelect').wrapAll('<div id="button_container"/>');
+       
+    }
+    $(document).on('click', '.regSelect', function(){
+        var type = $(this).data('dimension');
+        var value = $(this).val();
+        filterRowChart(type,value);
+    })
+    filterRowChart = function (type, value) {
+       //Options
+
+       switch(type){
+            case 'LocalAuthority':
+            redraw('ServiceTypes', 'LocalAuthority', value);
+            break;
+            case 'Region':
+            redraw('ServiceTypes','Region', value);
+            break;
+            case 'ServiceTypes':
+            redraw('Region', 'ServiceTypes',value);
+            break
+       }
+        function redraw(dimension, type, value){
+            var dim = ndx.dimension(dc.pluck(dimension))
+            switch(dimension){
+                case 'ServiceTypes':
+                group = reduceByServiceTypes(dim, type,value);
+                break;
+                case 'Region':
+                group = reduceByRegion(dim,type,value);
+                break;
+               
+            }
+            STBar = dc.barChart('#regionCountBarChart')
+           .width(1400)
+           .height(500)
+           .margins({top:10, right:50, bottom:30, left:50})
+           .dimension(dim)
+           .group(group)
+           .mouseZoomable(true)
+           .valueAccessor(function(d){
+               console.log(d.value.match);
+               if(d.value.match > 0 ){
+                   return d.value.match;
+               } else{
+                   return 0;
+               }
+           })
+           .transitionDuration(500)
+           .x(d3.scale.ordinal())
+           .xUnits(dc.units.ordinal)
+           .elasticY(true)
+           .xAxisLabel("Service Type")
+           .yAxis().ticks(20);
+   
+          
+           dc.rowChart('#regionCountRowChart')
+           .width(500)
+           .height(500)
+           .dimension(dim)
+           .group(group)
+           .valueAccessor(function(d){
+               if(d.value.match > 0 ){
+                    return d.value.match;
+                } else{
+                    return 0;
+                }
+            })
+            .elasticX(true);
+          
+            $('#regionCountRowChart').html("");
+            dc.renderAll();
+            $('#regionCountBarChart g.x text').each(function(e){
+                $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
+            })
+        } 
+       
+    
     };
     
-       
+    
  
  }
- 
- function reduceByRegion(dimension,rank){
-     console.log(rank);
-    return dimension.group().reduce(
+ //end chart regions
+function reduceByServiceTypes(dimension,type,value){
+       return dimension.group().reduce(
          function(p,v){
-             
              p.total++;
-             if(v.Region == rank){
-                 p.match++
+             switch(type){
+                 case 'LocalAuthority':
+                 if(v.LocalAuthority == value){
+                    p.match++
+                 }
+                 break;
+                 case 'Region':
+                 if(v.Region == value){
+                    p.match++
+                 }
+                 break;
+               
              }
-             return p;
+            
+            return p;
          },
          function (p,v){
              p.total--;
-             if(v.Region == rank){
-                 p.match--
-             }
+             switch(type){
+                case 'LocalAuthority':
+                if(v.LocalAuthority == value){
+                   p.match--
+                }
+                break;
+                case 'Region':
+                 if(v.Region == value){
+                    p.match--
+                 }
+                 break;
+            }
              return p;
          },
          function (){
@@ -184,5 +252,34 @@ dc.rowChart('#regionCountRowChart')
          }
      );
  }
+  function reduceByRegion(dimension,type,value){
+        return dimension.group().reduce(
+          function(p,v){
+              p.total++;
+              switch(type){
+                case 'ServiceTypes':
+                if(v.ServiceTypes == value){
+                   p.match++
+                }
+                break;
+            }
+             return p;
+          },
+          function (p,v){
+              p.total--;
+              switch(type){
+                case 'ServiceTypes':
+                if(v.ServiceTypes == value){
+                   p.match--
+                }
+                break;
+            }
+              return p;
+          },
+          function (){
+              return{total:0, match:0}
+          }
+      );
+  }
 
  

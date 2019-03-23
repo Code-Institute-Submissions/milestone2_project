@@ -21,6 +21,7 @@ body, main{
         @include media-breakpoint-down(sm){
         // Override default layout display
         display:block !important;
+        height:100%;
         }
 }
 
