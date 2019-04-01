@@ -15,7 +15,7 @@
 // @import "bootstrap/bootstrap-grid.scss";
 
 // MAIN SECTIONS
-body, main{
+body, main, footer{
     @include make-col(12);
     display:flex !important;
         @include media-breakpoint-down(sm){
@@ -24,9 +24,18 @@ body, main{
         height:100%;
         }
 }
-
+main{
+    padding-bottom:25px;
+}
+footer{
+    @include make-col(12);
+    // margin-top:10%;
+    z-index: 0;
+    
+   //background-color:grey;
+}
 #content{
-    background-color: $orange;
+    //background-color: $orange;
     @include make-col(9);
     @include media-breakpoint-down(sm){
         @include make-col(12);
@@ -34,11 +43,20 @@ body, main{
     }
 }
 #sidebar{
-    background-color: $secondary;
+   // background-color: $secondary;
     @include make-col(3);
     @include media-breakpoint-down(sm) { 
         @include make-col(12);
         display:block;
      }
 }
+
+.regSelect{
+    white-space: normal !important;
+}
+.halfwidth{
+    width:50%;
+    display:inline-block;
+}
 @import "modules/charts";
+@import "modules/transforms";

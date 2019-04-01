@@ -1339,17 +1339,24 @@
 
   .align-self-xl-stretch {
     align-self: stretch !important; } }
-body, main {
+body, main, footer {
   flex: 0 0 100%;
   max-width: 100%;
   display: flex !important; }
   @media (max-width: 767.98px) {
-    body, main {
+    body, main, footer {
       display: block !important;
       height: 100%; } }
 
+main {
+  padding-bottom: 25px; }
+
+footer {
+  flex: 0 0 100%;
+  max-width: 100%;
+  z-index: 0; }
+
 #content {
-  background-color: #fd7e14;
   flex: 0 0 75%;
   max-width: 75%; }
   @media (max-width: 767.98px) {
@@ -1359,7 +1366,6 @@ body, main {
       display: block; } }
 
 #sidebar {
-  background-color: #F3969A;
   flex: 0 0 25%;
   max-width: 25%; }
   @media (max-width: 767.98px) {
@@ -1368,19 +1374,27 @@ body, main {
       max-width: 100%;
       display: block; } }
 
+.regSelect {
+  white-space: normal !important; }
+
+.halfwidth {
+  width: 50%;
+  display: inline-block; }
+
 .svg-content-responsive {
   display: inline-block;
   position: relative;
+  margin-bottom: 15px;
   top: 10px;
   left: 0; }
 
 .svg-container {
   display: inline-block;
   position: fixed;
-  background-color: #fd7e14;
-  padding-bottom: 100%;
-  /* aspect ratio */
   vertical-align: top; }
+  @media (max-width: 767.98px) {
+    .svg-container {
+      position: relative; } }
 
 #button_container {
   flex: 0 0 100%;
@@ -1394,5 +1408,10 @@ body, main {
     #button_container button {
       flex: 0 0 50%;
       max-width: 50%; } }
+
+.btnanimation {
+  transition-property: display;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */

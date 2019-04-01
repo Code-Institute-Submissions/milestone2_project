@@ -45,6 +45,7 @@ function makeGraphs(error, data){
     $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
     $('button.regSelect').wrapAll('<div id="button_container"/>');
     $('#Selector').hide();
+    resizeButtons('.regSelect');
  }
 //end make graphs
 //Select Dropdown
@@ -128,6 +129,8 @@ dc.rowChart('#regionCountRowChart')
         });
         $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
         $('button.regSelect').wrapAll('<div id="button_container"/>');
+        scrollButtons();
+        resizeButtons('.regSelect');
        
     }
     $(document).on('click', '.regSelect', function(){
