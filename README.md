@@ -1,17 +1,18 @@
 # Milestone Project 2 for Fullstack Web Developer Course
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+This website displays a graphical breakdown of Care Quality Commision (CQC) data from the United Kingdom.
  
 ## UX
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+My initial idea for this project was a series of 5 graphs with 2 being along the top and 3 along the bottom of the screen, however after altering the CQC data, the amount of columns left with data made it impractical to follow this initial design. Following on from this I decided on one dynamic chart, that can change to show the majority of possible combinations. Because by default the d3 charting library is not responsive, I decided to actually create a column chart on mobile devices, this contains the same information as the initial bar chart, but is better adapted for mobile views.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+For the color scheme, I decided to use a third party site for the colors, since the main framework used in this project is bootstrap 4.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+### User stories
+
+1) I want to see all cqc records within my local council (Cambridgeshire)
+2) I am a user who wants to see how many ambulance organisations are within the United Kingdom
+3) I am a user who wants to see a regional breakdown of services.
 
 ## Features
 
