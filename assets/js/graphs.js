@@ -36,6 +36,7 @@ function makeGraphs(error, data){
     }
 
     dc.renderAll();
+    $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
     $('#regionCountBarChart g.x text').each(function(e){
         $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
     })
@@ -111,6 +112,11 @@ dc.rowChart('#regionCountRowChart')
         $('#regionCountBarChart').html("");
 
         dc.renderAll();
+        //With this chart, we need to slightly reduce the amount that it translates
+        $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
+        $('#regionCountBarChart g.x text').each(function(e){
+            $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
+        })
     }
 
    setView =  function (type){
@@ -123,13 +129,19 @@ dc.rowChart('#regionCountRowChart')
         .numberVisible(10);
         
         dc.renderAll();
+        $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
+        $('#regionCountBarChart g.x text').each(function(e){
+            $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
+        })
         $('#button_container').remove();
         $('.dc-select-option').each(function(e){
             $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\""+type+"\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
         });
-        $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
         $('button.regSelect').wrapAll('<div id="button_container"/>');
-        scrollButtons();
+        $('#button_container').after("<button class=\"regSelect master_reset btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
+        if(type == 'LocalAuthority'){
+            scrollButtons();
+        }
         resizeButtons('.regSelect');
        
     }
@@ -139,9 +151,7 @@ dc.rowChart('#regionCountRowChart')
         filterRowChart(type,value);
     })
     filterRowChart = function (type, value) {
-       //Options
-
-       switch(type){
+        switch(type){
             case 'LocalAuthority':
             redraw('ServiceTypes', 'LocalAuthority', value);
             break;
@@ -202,6 +212,7 @@ dc.rowChart('#regionCountRowChart')
           
             $('#regionCountRowChart').html("");
             dc.renderAll();
+            $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
             $('#regionCountBarChart g.x text').each(function(e){
                 $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
             })

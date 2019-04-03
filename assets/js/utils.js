@@ -33,8 +33,7 @@ function resizeButtons(selector){
 }
 
 function scrollButtons(){
-    var count = $('.regSelect').size();
-    if(count > 10){
+
         $('.regSelect').css('display', 'none');
         var letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
@@ -69,10 +68,14 @@ function scrollButtons(){
             $('#button_container').append("<button class=\"btn letterbutton btn-success halfwidth btnanimation\" data-let=\""+letters[l].toUpperCase()+"\">"+letters[l].toUpperCase()+"</button>");
         }
         $('#button_container').append("<button class=\"btn btn-warning reset\">BACK</button>");
+        // Initially hide the back button and move the main reset button
+        $('.reset').css('display', 'none');
         
-    }
+    
     $('.reset').on('click', function(){
         $('.regSelect').css('display', 'none');
+        $('.reset').css('display', 'none');
+        $('.master_reset').css('display','block')
         $('.letterbutton').css('display', 'inline-block');
     });
 
@@ -83,9 +86,13 @@ function scrollButtons(){
             if(t.toUpperCase() === let){
                 $(this).css('display', 'inline-block');
                 $('.letterbutton').css('display', 'none');
+                $('.reset').css('display', 'block');
+                $('.master_reset').css('display','none')
+                
             }
             else{
                 $(this).css('display', 'none');
+                
             }
         });
     });
