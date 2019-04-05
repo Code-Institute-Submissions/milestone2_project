@@ -8,7 +8,7 @@
 }
 .svg-container {
     display: inline-block;
-    position: fixed;
+    position: relative;
    vertical-align: top;
    @include media-breakpoint-down(sm){
     position:relative;

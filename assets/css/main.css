@@ -1393,7 +1393,7 @@ footer {
 
 .svg-container {
   display: inline-block;
-  position: fixed;
+  position: relative;
   vertical-align: top; }
   @media (max-width: 767.98px) {
     .svg-container {

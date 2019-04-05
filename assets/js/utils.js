@@ -3,7 +3,9 @@ $(window).on('load resize', function(d){
     var h = w * 2 + 250;
     $('#regionCountChart').css('height', h);
     var contSize = $('#content').height();
-    $('#mainfooter').css('margin-top', contSize/4 );
+    // $('#mainfooter').css('margin-top', contSize/2 );
+  
+    
 });
 function resizeButtons(selector){
     var selector = selector;
@@ -136,3 +138,34 @@ function removeexcessticks(){
     // $('.duplicate').not(':last').remove();
    
 }
+// Function below courtsey of MicronXD via https://stackoverflow.com/questions/10989695/stop-div-scrolling-once-it-reaches-another-div
+var windw = this;
+
+$.fn.followTo = function ( elem ) {
+    var $this = this,
+        $window = $(windw),
+        $bumper = $(elem),
+        bumperPos = $bumper.offset().top,
+        thisHeight = $this.outerHeight(),
+        setPosition = function(){
+            if ($window.scrollTop() > (bumperPos - thisHeight)) {
+                $this.css({
+                    position: 'absolute',
+                    top: (bumperPos - thisHeight)
+                });
+            } else {
+                $this.css({
+                    position: 'fixed',
+                    top: 0
+                });
+            }
+        };
+    $window.resize(function()
+    {
+        bumperPos = pos.offset().top;
+        thisHeight = $this.outerHeight();
+        setPosition();
+    });
+    $window.scroll(setPosition);
+    setPosition();
+};
