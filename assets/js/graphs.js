@@ -11,7 +11,7 @@ function makeGraphs(error, data){
     createDropdown(ndx);
     $(window).on('resize', function(e){
         var width = $('#content').innerWidth();
-        if(width <= '768')
+        if(width <= '960')
         {   
             $('#regionCountBarChart').hide();
             $('#regionCountRowChart').show(); 
@@ -25,7 +25,7 @@ function makeGraphs(error, data){
     $('svg').addClass('svg-content-responsive');
     //Then dependent on the width of the content div, hide the revelent chart
     var width = $('#content').innerWidth();
-    if(width <= '768')
+    if(width <= '960')
     {   
         $('#regionCountBarChart').hide();
         $('#regionCountRowChart').show(); 
@@ -46,6 +46,7 @@ function makeGraphs(error, data){
     $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
     $('button.regSelect').wrapAll('<div id="button_container"/>');
     $('#Selector').hide();
+    removeexcessticks();
     resizeButtons('.regSelect');
  }
 //end make graphs
@@ -60,6 +61,7 @@ function createDropdown(ndx){
  }
 //Charts
  function chart_Regions(ndx){
+    dc.utils.printSingleValue.fformat = d3.format('.0f');
     var dim = ndx.dimension(dc.pluck('Region'));
     var group = dim.group();
 
@@ -83,7 +85,15 @@ dc.rowChart('#regionCountRowChart')
     .height(500)
     .dimension(dim)
     .group(group)
-    .elasticX(true);
+    .elasticX(true)
+    .xAxis().tickFormat(function(v){
+        console.log("------------");
+        console.log("V is : " + v);
+        console.log("Floor" + Math.floor(v))
+        console.log("Ceil" + Math.ceil(v))
+        console.log("Round" + Math.round(v))
+        return Math.round(v);
+    });
 
 
     resetChart = function(){
@@ -108,6 +118,18 @@ dc.rowChart('#regionCountRowChart')
         .dimension(dim)
         .group(group)
         .elasticX(true)
+        .xAxis().tickFormat(function(v){
+            console.log("------------");
+            console.log("V is : " + v);
+            console.log("Floor" + Math.floor(v))
+            console.log("Ceil" + Math.ceil(v))
+            console.log("Round" + Math.round(v))
+            if(typeof(v) != int){
+                return 0;
+            }
+            return Math.floor(v);
+            
+        });
         $('#regionCountRowChart').html("");
         $('#regionCountBarChart').html("");
 
@@ -116,7 +138,10 @@ dc.rowChart('#regionCountRowChart')
         $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
         $('#regionCountBarChart g.x text').each(function(e){
             $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
-        })
+        });
+        removeexcessticks();
+       
+       
     }
 
    setView =  function (type){
@@ -143,6 +168,7 @@ dc.rowChart('#regionCountRowChart')
             scrollButtons();
         }
         resizeButtons('.regSelect');
+        
        
     }
     $(document).on('click', '.regSelect', function(){
@@ -208,14 +234,23 @@ dc.rowChart('#regionCountRowChart')
                     return 0;
                 }
             })
-            .elasticX(true);
+            .elasticX(true)
+            .xAxis().tickFormat(function(v){
+                console.log("------------");
+                console.log("V is : " + v);
+                console.log("Floor" + Math.floor(v))
+                console.log("Ceil" + Math.ceil(v))
+                console.log("Round" + Math.round(v))
+                return Math.round(v);
+            });
           
             $('#regionCountRowChart').html("");
             dc.renderAll();
             $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
             $('#regionCountBarChart g.x text').each(function(e){
                 $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
-            })
+            });
+            removeexcessticks();
         } 
        
     

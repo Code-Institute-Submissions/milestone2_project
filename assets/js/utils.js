@@ -1,9 +1,9 @@
 $(window).on('load resize', function(d){
     var w = $('svg').height();
     var h = w * 2 + 250;
-    // console.log(w);
-    // console.log(h);
     $('#regionCountChart').css('height', h);
+    var contSize = $('#content').height();
+    $('#mainfooter').css('margin-top', contSize/4 );
 });
 function resizeButtons(selector){
     var selector = selector;
@@ -96,4 +96,43 @@ function scrollButtons(){
             }
         });
     });
+}
+
+function removeexcessticks(){
+    var cv;
+    console.log("BOB");
+    //Apply first and last classes, since these are always needed
+    $('#regionCountRowChart svg g.tick:first').addClass('FirstTick');
+    $('#regionCountRowChart svg g.tick:last').addClass('LastTick');
+    
+    //Grab the first and last values, so we can compare against
+    var firstVal = $('#regionCountRowChart svg g.tick:first').text();
+    var lastVal = $('#regionCountRowChart svg g.tick:last').text();
+    
+    //Now we loop through the remaining ticks
+    $.each($('#regionCountRowChart svg g.tick'), function(){
+       var val = $(this).text();
+       
+       console.log (cv == val);
+        if(cv == null){
+            console.log("CV NULL");
+             cv = val;
+         }
+         else{
+             $(this).addClass('InnerTick');
+             if(val === cv){
+                $(this).next().addClass('valMatch')
+             }
+             else{
+                $(this).addClass('noMatch')
+                cv = val;
+             }
+            }
+         }
+    );
+
+     $('.InnerTick').not('.firstTick').not('.LastTick').remove();
+   // $('.tick').not('.LastTick').remove();
+    // $('.duplicate').not(':last').remove();
+   
 }
