@@ -61,12 +61,13 @@ function createDropdown(ndx){
  }
 //Charts
  function chart_Regions(ndx){
+    var cwidth = $('#content').width();
     dc.utils.printSingleValue.fformat = d3.format('.0f');
     var dim = ndx.dimension(dc.pluck('Region'));
     var group = dim.group();
 
    dc.barChart('#regionCountBarChart')
-    .width(1400)
+    .width(cwidth)
     .height(500)
     .margins({top:10, right:50, bottom:30, left:50})
     .dimension(dim)
@@ -81,7 +82,7 @@ function createDropdown(ndx){
        
    
 dc.rowChart('#regionCountRowChart')
-    .width(500)
+    .width(cwidth)
     .height(500)
     .dimension(dim)
     .group(group)
@@ -97,10 +98,11 @@ dc.rowChart('#regionCountRowChart')
 
 
     resetChart = function(){
+        var cwidth = $('#content').width();
         var dim = ndx.dimension(dc.pluck('Region'));
         group = dim.group();
         dc.barChart('#regionCountBarChart')
-        .width(1400)
+        .width(cwidth)
         .height(500)
         .margins({top:10, right:50, bottom:30, left:50})
         .dimension(dim)
@@ -113,7 +115,7 @@ dc.rowChart('#regionCountRowChart')
         .yAxis().ticks(20);
 
         dc.rowChart('#regionCountRowChart')
-        .width(500)
+        .width(cwidth)
         .height(500)
         .dimension(dim)
         .group(group)
@@ -189,6 +191,7 @@ dc.rowChart('#regionCountRowChart')
             break
        }
         function redraw(dimension, type, value){
+            var cwidth = $('#content').width();
             var dim = ndx.dimension(dc.pluck(dimension))
             switch(dimension){
                 case 'ServiceTypes':
@@ -200,7 +203,7 @@ dc.rowChart('#regionCountRowChart')
                
             }
             STBar = dc.barChart('#regionCountBarChart')
-           .width(1400)
+           .width(cwidth)
            .height(500)
            .margins({top:10, right:50, bottom:30, left:50})
            .dimension(dim)
@@ -223,7 +226,7 @@ dc.rowChart('#regionCountRowChart')
    
           
            dc.rowChart('#regionCountRowChart')
-           .width(500)
+           .width(cwidth)
            .height(500)
            .dimension(dim)
            .group(group)
