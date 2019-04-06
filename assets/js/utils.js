@@ -1,11 +1,7 @@
 $(window).on('load resize', function(d){
     var w = $('svg').height();
     var h = w * 2 + 250;
-    $('#regionCountChart').css('height', h);
-    var contSize = $('#content').height();
-    // $('#mainfooter').css('margin-top', contSize/2 );
-  
-    
+    $('#regionCountChart').css('height', h); 
 });
 function resizeButtons(selector){
     var selector = selector;
@@ -102,14 +98,14 @@ function scrollButtons(){
 
 function removeexcessticks(){
     var cv;
-    console.log("BOB");
     //Apply first and last classes, since these are always needed
     $('#regionCountRowChart svg g.tick:first').addClass('FirstTick');
     $('#regionCountRowChart svg g.tick:last').addClass('LastTick');
     
     //Grab the first and last values, so we can compare against
-    var firstVal = $('#regionCountRowChart svg g.tick:first').text();
-    var lastVal = $('#regionCountRowChart svg g.tick:last').text();
+    //NOT NEEDED
+    // var firstVal = $('#regionCountRowChart svg g.tick:first').text();
+    // var lastVal = $('#regionCountRowChart svg g.tick:last').text();
     
     //Now we loop through the remaining ticks
     $.each($('#regionCountRowChart svg g.tick'), function(){
@@ -117,28 +113,25 @@ function removeexcessticks(){
        
        console.log (cv == val);
         if(cv == null){
-            console.log("CV NULL");
-             cv = val;
+            cv = val;
          }
          else{
-             $(this).addClass('InnerTick');
-             if(val === cv){
-                $(this).next().addClass('valMatch')
+             if($(this).hasClass('firstTick') || $(this).hasClass('LastTick')){
+
              }
              else{
-                $(this).addClass('noMatch')
-                cv = val;
-             }
+                $(this).addClass('Innertick')
+            }
+           
             }
          }
     );
 
-     $('.InnerTick').not('.firstTick').not('.LastTick').remove();
-   // $('.tick').not('.LastTick').remove();
-    // $('.duplicate').not(':last').remove();
-   
+    $('.Innertick').remove();
 }
 // Function below courtsey of MicronXD via https://stackoverflow.com/questions/10989695/stop-div-scrolling-once-it-reaches-another-div
+
+//This has not been used within the project, but it is worth noting as it stops a div with a fixed position from scrolling past a certain element id
 var windw = this;
 
 $.fn.followTo = function ( elem ) {

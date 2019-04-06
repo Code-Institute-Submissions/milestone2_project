@@ -1,4 +1,5 @@
 // Graphs.js
+var debug = false;
 queue()
 .defer(d3.csv, "assets/data/CQC_DATA_JAN_19.csv")
 .await(makeGraphs)
@@ -37,6 +38,10 @@ function makeGraphs(error, data){
 
     dc.renderAll();
     $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
+    $('#regionCountRowChart svg g.row').each(function(x){
+        var t = $(this).find('title').text();
+        $(this).find('text').text(t)
+    });
     $('#regionCountBarChart g.x text').each(function(e){
         $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
     })
@@ -79,7 +84,7 @@ function createDropdown(ndx){
     .xAxisLabel("Region")
     .yAxis().ticks(20);
     
-       
+     
    
 dc.rowChart('#regionCountRowChart')
     .width(cwidth)
@@ -88,14 +93,19 @@ dc.rowChart('#regionCountRowChart')
     .group(group)
     .elasticX(true)
     .xAxis().tickFormat(function(v){
-        console.log("------------");
-        console.log("V is : " + v);
-        console.log("Floor" + Math.floor(v))
-        console.log("Ceil" + Math.ceil(v))
-        console.log("Round" + Math.round(v))
+        if(debug){
+            console.log("------------");
+            console.log("V is : " + v);
+            console.log("Floor" + Math.floor(v))
+            console.log("Ceil" + Math.ceil(v))
+            console.log("Round" + Math.round(v))
+            }
         return Math.round(v);
     });
-
+    $('#regionCountRowChart svg g.row').each(function(x){
+        var t = $(this).find('title').text();
+        $(this).find('text').text(t)
+    });  
 
     resetChart = function(){
         var cwidth = $('#content').width();
@@ -111,8 +121,8 @@ dc.rowChart('#regionCountRowChart')
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)
-        .xAxisLabel("Region")
-        .yAxis().ticks(20);
+        .xAxisLabel("Region");
+        //.yAxis().ticks(20);
 
         dc.rowChart('#regionCountRowChart')
         .width(cwidth)
@@ -121,11 +131,13 @@ dc.rowChart('#regionCountRowChart')
         .group(group)
         .elasticX(true)
         .xAxis().tickFormat(function(v){
+            if(debug){
             console.log("------------");
             console.log("V is : " + v);
             console.log("Floor" + Math.floor(v))
             console.log("Ceil" + Math.ceil(v))
             console.log("Round" + Math.round(v))
+            }
             if(typeof(v) != int){
                 return 0;
             }
@@ -138,6 +150,11 @@ dc.rowChart('#regionCountRowChart')
         dc.renderAll();
         //With this chart, we need to slightly reduce the amount that it translates
         $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
+        //And add the count to each label
+        $('#regionCountRowChart svg g.row').each(function(x){
+            var t = $(this).find('title').text();
+            $(this).find('text').text(t)
+        });
         $('#regionCountBarChart g.x text').each(function(e){
             $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
         });
@@ -210,7 +227,9 @@ dc.rowChart('#regionCountRowChart')
            .group(group)
            .mouseZoomable(true)
            .valueAccessor(function(d){
+               if(debug){
                console.log(d.value.match);
+               }
                if(d.value.match > 0 ){
                    return d.value.match;
                } else{
@@ -239,17 +258,23 @@ dc.rowChart('#regionCountRowChart')
             })
             .elasticX(true)
             .xAxis().tickFormat(function(v){
-                console.log("------------");
-                console.log("V is : " + v);
-                console.log("Floor" + Math.floor(v))
-                console.log("Ceil" + Math.ceil(v))
-                console.log("Round" + Math.round(v))
+                if(debug){
+                    console.log("------------");
+                    console.log("V is : " + v);
+                    console.log("Floor" + Math.floor(v))
+                    console.log("Ceil" + Math.ceil(v))
+                    console.log("Round" + Math.round(v))
+                    }
                 return Math.round(v);
             });
           
             $('#regionCountRowChart').html("");
             dc.renderAll();
             $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
+            $('#regionCountRowChart svg g.row').each(function(x){
+                var t = $(this).find('title').text();
+                $(this).find('text').text(t)
+            });
             $('#regionCountBarChart g.x text').each(function(e){
                 $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
             });
