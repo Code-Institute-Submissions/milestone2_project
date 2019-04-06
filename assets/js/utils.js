@@ -9,8 +9,6 @@ function resizeButtons(selector){
     $(selector).each(function(){
         var initheight = 0;
         var h = $(this).height();
-
-        // console.log(initheight >= h)
         if(maxheight == null){
             if(h > initheight){
                 maxheight = h;
@@ -21,13 +19,14 @@ function resizeButtons(selector){
                 maxheight = h;
             }
         }
-       
-        // console.log("Height is :" + h);
     });
-    // console.log(maxheight)
+   
     $(selector).each(function(){
         $(this).css('height', maxheight + 8);
     })
+    if($('.master_reset').length > 1){
+        $('.master_reset:first').remove();
+    }
 }
 
 function scrollButtons(){

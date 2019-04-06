@@ -48,8 +48,8 @@ function makeGraphs(error, data){
     $('.dc-select-option').each(function(e){
         $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\"Region\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
     });
-    $('#Selector').after("<button class=\"regSelect btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
     $('button.regSelect').wrapAll('<div id="button_container"/>');
+    $('#button_container').after("<button class=\"master_reset btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
     $('#Selector').hide();
     removeexcessticks();
     resizeButtons('.regSelect');
@@ -131,16 +131,6 @@ dc.rowChart('#regionCountRowChart')
         .group(group)
         .elasticX(true)
         .xAxis().tickFormat(function(v){
-            if(debug){
-            console.log("------------");
-            console.log("V is : " + v);
-            console.log("Floor" + Math.floor(v))
-            console.log("Ceil" + Math.ceil(v))
-            console.log("Round" + Math.round(v))
-            }
-            if(typeof(v) != int){
-                return 0;
-            }
             return Math.floor(v);
             
         });
@@ -182,7 +172,7 @@ dc.rowChart('#regionCountRowChart')
             $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\""+type+"\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
         });
         $('button.regSelect').wrapAll('<div id="button_container"/>');
-        $('#button_container').after("<button class=\"regSelect master_reset btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
+        $('#button_container').after("<button class=\"master_reset btn btn-danger\" onClick=\"resetChart()\">RESET</button>");
         if(type == 'LocalAuthority'){
             scrollButtons();
         }
@@ -227,10 +217,7 @@ dc.rowChart('#regionCountRowChart')
            .group(group)
            .mouseZoomable(true)
            .valueAccessor(function(d){
-               if(debug){
-               console.log(d.value.match);
-               }
-               if(d.value.match > 0 ){
+                if(d.value.match > 0 ){
                    return d.value.match;
                } else{
                    return 0;
@@ -258,13 +245,6 @@ dc.rowChart('#regionCountRowChart')
             })
             .elasticX(true)
             .xAxis().tickFormat(function(v){
-                if(debug){
-                    console.log("------------");
-                    console.log("V is : " + v);
-                    console.log("Floor" + Math.floor(v))
-                    console.log("Ceil" + Math.ceil(v))
-                    console.log("Round" + Math.round(v))
-                    }
                 return Math.round(v);
             });
           
@@ -279,6 +259,8 @@ dc.rowChart('#regionCountRowChart')
                 $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
             });
             removeexcessticks();
+
+            
         } 
        
     
