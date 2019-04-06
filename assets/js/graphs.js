@@ -166,7 +166,11 @@ dc.rowChart('#regionCountRowChart')
         $('#regionCountRowChart svg').find('g:first').attr('transform', 'translate(5,15)')
         $('#regionCountBarChart g.x text').each(function(e){
             $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
-        })
+        });
+        $('#regionCountRowChart svg g.row').each(function(x){
+            var t = $(this).find('title').text();
+            $(this).find('text').text(t)
+        });
         $('#button_container').remove();
         $('.dc-select-option').each(function(e){
             $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\""+type+"\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
