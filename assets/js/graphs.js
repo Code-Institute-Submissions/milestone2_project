@@ -45,6 +45,7 @@ function makeGraphs(error, data){
     $('#regionCountBarChart g.x text').each(function(e){
         $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
     })
+    labels();
     $('.dc-select-option').each(function(e){
         $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\"Region\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
     });
@@ -148,6 +149,7 @@ dc.rowChart('#regionCountRowChart')
         $('#regionCountBarChart g.x text').each(function(e){
             $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
         });
+        labels();
         removeexcessticks();
        
        
@@ -172,6 +174,7 @@ dc.rowChart('#regionCountRowChart')
             $(this).find('text').text(t)
         });
         $('#button_container').remove();
+        labels();
         $('.dc-select-option').each(function(e){
             $('#Selector').before("<button class=\"regSelect btn btn-primary\" data-dimension=\""+type+"\" value=\""+$(this).val()+"\">"+$(this).val().toUpperCase()+"</button>");
         });
@@ -262,6 +265,7 @@ dc.rowChart('#regionCountRowChart')
             $('#regionCountBarChart g.x text').each(function(e){
                 $(this).css('transform', 'rotate(270deg) translateX(130px)').css('color', '#FFF');
             });
+            labels();
             removeexcessticks();
 
             
@@ -345,4 +349,21 @@ function reduceByServiceTypes(dimension,type,value){
       );
   }
 
- 
+  function labels(){
+    var tn = $('.bar').length
+    var titles = []
+
+    for(var i=0;i< tn;i++){
+        $('.bar').each(function(e){
+           titles.push($(this).find('title').text());
+        });
+    }
+    $('titles').each(function(){
+        console.log(titles);
+    })
+    var i = 0;
+    $('.x .tick').each(function(){
+     $(this).find('text').text(titles[i]);
+        i++
+    })
+}
