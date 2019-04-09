@@ -3,8 +3,8 @@ $(window).on('load resize', function(d){
     var h = w * 2 + 250;
     $('#regionCountChart').css('height', h); 
 });
-function resizeButtons(selector){
-    var selector = selector;
+function resizeButtons(element){
+    var selector = element;
     var maxheight;
     $(selector).each(function(){
         var initheight = 0;
@@ -23,7 +23,7 @@ function resizeButtons(selector){
    
     $(selector).each(function(){
         $(this).css('height', maxheight + 8);
-    })
+    });
     if($('.master_reset').length > 1){
         $('.master_reset:first').remove();
     }
@@ -72,7 +72,7 @@ function scrollButtons(){
     $('.reset').on('click', function(){
         $('.regSelect').css('display', 'none');
         $('.reset').css('display', 'none');
-        $('.master_reset').css('display','block')
+        $('.master_reset').css('display','block');
         $('.letterbutton').css('display', 'inline-block');
     });
 
@@ -84,8 +84,7 @@ function scrollButtons(){
                 $(this).css('display', 'inline-block');
                 $('.letterbutton').css('display', 'none');
                 $('.reset').css('display', 'block');
-                $('.master_reset').css('display','none')
-                
+                $('.master_reset').css('display','none');
             }
             else{
                 $(this).css('display', 'none');
@@ -109,8 +108,6 @@ function removeexcessticks(){
     //Now we loop through the remaining ticks
     $.each($('#regionCountRowChart svg g.tick'), function(){
        var val = $(this).text();
-       
-       console.log (cv == val);
         if(cv == null){
             cv = val;
          }
@@ -119,7 +116,7 @@ function removeexcessticks(){
 
              }
              else{
-                $(this).addClass('Innertick')
+                $(this).addClass('Innertick');
             }
            
             }
