@@ -93,6 +93,7 @@ function chart_Regions(ndx) {
     .transitionDuration(500)
     .x(d3.scale.ordinal())
     .xUnits(dc.units.ordinal)
+    //.useViewBoxResizing(true)
     .elasticY(true)
     .xAxisLabel("Region")
     .yAxis()
