@@ -248,8 +248,7 @@ function chart_Regions(ndx) {
           group = reduceByRegion(dim, type, value);
           break;
       }
-      STBar = dc
-        .barChart("#regionCountBarChart")
+      dc.barChart("#regionCountBarChart")
         .width(cwidth)
         .height(500)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })

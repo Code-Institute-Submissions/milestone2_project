@@ -32,10 +32,16 @@ function resizeButtons(element){
 function scrollButtons(){
 
         $('.regSelect').css('display', 'none');
-        var letters = 'abcdefghijklmnopqrstuvwxyz'.split(''); 
-        for (var l in letters) {
-            $('#button_container').append("<button class=\"btn letterbutton btn-success halfwidth btnanimation\" data-let=\""+letters[l].toUpperCase()+"\">"+letters[l].toUpperCase()+"</button>");
+        var letters = 'abcdefghijklmnopqrstuvwxyz';
+        if(typeof(letters) == 'string'){
+            var alphabet = letters.split('');
+            for (var l in alphabet) {
+                if(typeof(alphabet[l]) == 'string'){
+                    $('#button_container').append("<button class=\"btn letterbutton btn-success halfwidth btnanimation\" data-let=\""+alphabet[l].toUpperCase()+"\">"+alphabet[l].toUpperCase()+"</button>");
+                }
+            }
         }
+        
         $('#button_container').append("<button class=\"btn btn-warning reset\">BACK</button>");
         // Initially hide the back button and move the main reset button
         $('.reset').css('display', 'none');
