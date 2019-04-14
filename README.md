@@ -256,17 +256,26 @@ In addition to the automated testing above, all of the click functionality neede
 ### How it Displays
 #### Google Chrome
 ![Google Chrome - Desktop][chrome]
+***
+![Google Chrome - Mobile][chromemobile]
 
 #### Firefox
 ![Firefox - Desktop][firefox]
+***
+![Firefox - Mobile][firefoxmobile]
 
 #### Internet Explorer
 
 ![Internet Explorer - Desktop][ie]
+***
+![Internet Explorer - Mobile][iemobile]
 
 [chrome]: readme_images/MS2P_Chrome.png
 [ie]: readme_images/MS2P_Internet_Explorer.png
 [firefox]: readme_images/MS2P_Firefox.png
+[chromemobile]: readme_images/MS2P_Chrome_Mobile.png
+[firefoxmobile]: readme_images/MS2P_Firefox_Mobile.png
+[iemobile]:  readme_images/MS2P_Internet_Explorer_Mobile.png
 ## Deployment
 
 The site is available to view via [here](https://lowe54.github.io/milestone2_project/)
