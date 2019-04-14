@@ -238,10 +238,35 @@ The table below explains what each of the tests checked for
 
 In addition to the automated testing above, all of the click functionality needed to be tested manually, the table below shows what was tested, the expected result and what actually happened, with notes added if changes were needed.
 
+| Test Number 	| Section of the site                                           	| What Should Happen                                                                                      	| What Actually Happened                                     	| Actions to Take (If Any)                                                                         	|
+|-------------	|---------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------	|------------------------------------------------------------	|--------------------------------------------------------------------------------------------------	|
+| 1           	| Chart Filtering - Clicking on 'East Midlands'                 	| Chart should change to show service types for the East Midlands region                                  	| Chart shows service types for east midlands                	| N/A                                                                                              	|
+| 2           	| Chart Filtering - Clicking on 'East' after performing test #1 	| Chart should change to show service types for the East region                                           	| Chart shows service types for the east region              	| N/A                                                                                              	|
+| 3           	| Dimension Change - Clicking on 'Service Types' in the navbar  	| Chart should not change from current chart, buttons on left should change to show the service type list 	| Chart stays the same, buttons now show service types       	| N/A                                                                                              	|
+| 4           	| Chart Filtering - Clicking on 'Ambulances' after test #3      	| Chart should change to show the number of 'Ambulance' services per 'Region'                             	| Chart shows ambulance services per region                  	| N/A                                                                                              	|
+| 5           	| Chart Filtering - Clicking on 'Hospital' after test #4        	| Chart should change to show the number of 'Hospital' services per 'Region'                              	| Chart changes to show # of Hospital services per region    	| N/A                                                                                              	|
+| 6           	| Dimension Change - Clicking 'Local Authorities' in the navbar 	| Chart should not change from current chart, buttons on left should change to show an A-Z list           	| Chart does not change and buttons go to A-Z list           	| N/A                                                                                              	|
+| 7           	| A-Z Filtering - Clicking on 'A'                               	| Nothing should happen as no councils within the data start with'A'                                      	| Nothing happened                                           	| N/A                                                                                              	|
+| 8           	| A-Z Filtering - Clicking on 'C'                               	| Buttons on left should change to show all councils starting with 'C'                                    	| Buttons changed                                            	| N/A                                                                                              	|
+| 9           	| A-Z Filtering - Clicking on 'Back' button after test #8       	| Buttons on left should revert to the A-Z list                                                           	| Buttons reverted to A-Z list                               	| N/A                                                                                              	|
+| 10          	| Chart filtering - Click on 'Reset' button                     	| Buttons on left should stay the same, however chart should reset to initial chart.                      	| Buttons stayed the same and chart reset                    	| N/A                                                                                              	|
+| 11          	| Screen size change - Desktop to Mobile                        	| Chart should convert to Row Chart format                                                                	| Chart converted to row chart format, did not scale however 	| SVG's are not responsive at the moment, see the 'Features left to implement' section for details 	|
+| 12          	| Screen size change - Mobile to Desktop                        	| Chart should convert to Bar Chart format                                                                	| Chart converted to bar chart format, did not scale however 	| SVG's are not responsive at the moment, see the 'Features left to implement' section for details 	|
 
+### How it Displays
+#### Google Chrome
+![Google Chrome - Desktop][chrome]
 
+#### Firefox
+![Firefox - Desktop][firefox]
 
+#### Internet Explorer
 
+![Internet Explorer - Desktop][ie]
+
+[chrome]: readme_images/MS2P_Chrome.png
+[ie]: readme_images/MS2P_Internet_Explorer.png
+[firefox]: readme_images/MS2P_Firefox.png
 ## Deployment
 
 The site is available to view via [here](https://lowe54.github.io/milestone2_project/)
