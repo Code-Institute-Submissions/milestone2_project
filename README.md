@@ -17,12 +17,11 @@ For the color scheme, I decided to use a third party site for the colors, since 
 ## Features
 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- Custom A-Z list
+-- Allows the user to search for their council by their first letter of the councils name, this is implemented in the [utils.js](/assets/js/utils.js) file
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Row chart on mobiles
+-- Allows the data to be easily viewed on mobile devices, since the row chart displays the data better on small screen sizes (See the testing section for screenshots)
 
 ### Features Left to Implement
 - Responsive svg's
@@ -41,7 +40,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [Bootstrap v3.3](https://getbootstrap.com/docs/3.3/)
     - The project uses **Bootstrap** for the navbar functionality, along with making the images responsive and responsive visibility classes. In addtion it provides the 'grid' functionality for layout purposes.
 - [SASS](http://sass-lang.com/) - **SASS** was used to add extra functionality to CSS, it allows for nested statements to be used, which in turn made the files easier to read.
-
+- [Jasmine](https://jasmine.github.io/) - **Jasmine** was used for the automated testing
 
 ## Testing
 
