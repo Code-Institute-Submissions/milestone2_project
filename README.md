@@ -63,10 +63,10 @@ The table below shows the various validators used and there results
 ![graphs.js result][graphsresult]
 
 
-**NOTE: The `queue`, `d3`, `dc` and `crossfilter` parameters are used by third-party libraries, which are used to draw the graph(s) present in this project
+**NOTE:** The `queue`, `d3`, `dc` and `crossfilter` parameters are used by third-party libraries, which are used to draw the graph(s) present in this project
 
 The `removeexcessticks`, `resizeButtons`, `scrollButtons` are functions held in the Utils.js file
-The `setView`, `filterRowChart` and `resetChart` are used variables set as functions within this file. They are called from the index.html page itself** 
+The `setView`, `filterRowChart` and `resetChart` are used variables set as functions within this file. They are called from the index.html page itself 
 
 #### Utils.js - Results
 
