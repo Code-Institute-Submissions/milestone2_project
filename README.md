@@ -57,129 +57,10 @@ The table below shows the various validators used and there results
 
 #### Graphs.js results
 
-**Metrics**
+[graphsresult]: readme_images/graphs_js_result.png
+[utilsresult]: readme_images/utils_js_result.png
 
-There are 36 functions in this file.
-
-
-Function with the largest signature take 3 arguments, while the median is 1.
-
-
-Largest function has 22 statements in it, while the median is 2.
-
-
-The most complex function has a cyclomatic complexity value of 5 while the median is 1.
-
-
-**11 undefined variables**
-
-
-2	queue
-
-
-3	d3
-
-
-94	d3
-
-
-132	d3
-
-
-267	d3
-
-
-7	crossfilter
-
-
-34	dc
-
-
-74	dc
-
-
-77	dc
-
-
-84	dc
-
-
-87	dc
-
-
-95	dc
-
-
-102	dc
-
-
-123	dc
-
-
-125	dc
-
-
-133	dc
-
-
-137	dc
-
-
-150	dc
-
-
-174	dc
-
-
-177	dc
-
-
-182	dc
-
-
-242	dc
-
-
-251	dc
-
-
-268	dc
-
-
-274	dc
-
-
-293	dc
-
-
-68	removeexcessticks
-
-
-170	removeexcessticks
-
-
-311	removeexcessticks
-
-
-69	resizeButtons
-
-
-221	resizeButtons
-
-
-121	resetChart
-
-
-173	setView
-
-
-219	scrollButtons
-
-
-226	filterRowChart
-
-
-228	filterRowChart
+![graphs.js result][graphsresult]
 
 
 **NOTE: The `queue`, `d3`, `dc` and `crossfilter` parameters are used by third-party libraries, which are used to draw the graph(s) present in this project
@@ -189,29 +70,7 @@ The `setView`, `filterRowChart` and `resetChart` are used variables set as funct
 
 #### Utils.js - Results
 
-**Metrics**
-There are 10 functions in this file.
-
-
-Function with the largest signature take 2 arguments, while the median is 0.
-
-
-Largest function has 11 statements in it, while the median is 5.
-
-
-The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
-
-
-**Three unused variables**
-
-
-6	resizeButtons
-
-
-32	scrollButtons
-
-
-75	removeexcessticks
+![utils.js result][utilsresult]
 
 **NOTE: These are all functions within the js file**
 
